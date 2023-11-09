@@ -1,8 +1,3 @@
-
-from flask import Flask, request, jsonify, render_template
-
-app = Flask(__name)
-
 def convert_decimal_to_roman(decimal):
     if not 1 <= decimal <= 3999:
         raise ValueError("La conversion n'est possible que pour les nombres entre 1 et 3999.")
@@ -33,4 +28,9 @@ def convert_decimal_to_roman(decimal):
 
     return result
 
-print(convert_decimal_to_roman(4000))
+try:
+    decimal_input = int(input("Entrez un nombre Arabe entre 1 et 3999 : "))
+    roman_output = convert_decimal_to_roman(decimal_input)
+    print(f"Le nombre romain correspondant est : {roman_output}")
+except ValueError as e:
+    print(f"Erreur : {e}")
