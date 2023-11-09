@@ -1,5 +1,3 @@
-import re
-
 def convert_roman_to_decimal(roman):
     roman_numerals = {
         "M": 1000,
@@ -24,6 +22,10 @@ def convert_roman_to_decimal(roman):
 
         prev_value = value
 
+        if decimal > 3999:
+            raise ValueError("La conversion n'est possible que pour les nombres entre I et MMMCMXCIX (1 à 3999).")
+
     return decimal
 
-print(convert_roman_to_decimal("D"))
+
+print(convert_roman_to_decimal("VIII"))
