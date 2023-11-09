@@ -27,5 +27,10 @@ def convert_roman_to_decimal(roman):
 
     return decimal
 
-
-print(convert_roman_to_decimal("VIII"))
+# Interaction 
+try:
+    roman_input = input("Entrez un nombre romain : ")
+    decimal_output = convert_roman_to_decimal(roman_input)
+    print(f"Le nombre décimal correspondant est : {decimal_output}")
+except ValueError as e:
+    print(f"Erreur : {e}")
