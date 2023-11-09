@@ -1,3 +1,5 @@
+import re
+
 def convert_roman_to_decimal(roman):
     roman_numerals = {
         "M": 1000,
