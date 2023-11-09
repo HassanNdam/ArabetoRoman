@@ -1,3 +1,5 @@
+import unittest
+
 def convert_decimal_to_roman(decimal):
     if not 1 <= decimal <= 3999:
         raise ValueError("La conversion n'est possible que pour les nombres entre 1 et 3999.")

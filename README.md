@@ -3,8 +3,8 @@ MT5 Hetic project
 
 Pour lancer et tester le nouvel algo
 
-faire python new_algo.py dans le terminal en bas.
+- Faire commande "python app.py" dans le terminal en bas.
 
-Si vous souhaitez tester d'autres entrées, changer le chiffre romain présents ligne 29
+- L'écran demande à l'utilisateur d'entrer un chiffre Arabe compris dans l'interval 1 et 3999
 
-🚧 N'oubliez pas les guillemets
+- Rentrer le nombre et le résultat s'affiche à l'écran
